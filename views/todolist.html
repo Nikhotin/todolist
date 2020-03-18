@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todoshka</title>
+  <link rel = "stylesheet" href = "../public/stylesheets/style.css" />
+</head>
+<body>
+
+  <div class="grid">
+		<header>
+			<div class="logo">
+				<a href="#">Todoshka</a>
+			</div>
+			<nav>
+				<div>
+					<a class="navbtn" href="#">Your Todolist</a>
+				</div>
+				<div>
+					<a class="navbtn" href="#">Profile</a>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="content">
+        <div>
+          <p class="title">Your todos</p>
+          <input type="text" placeholder="Input your new todo..." id="toDoElem">
+         	<span class="todoBtn" onclick="newElement()">Add todo</span>
+         	<span class="todoBtn" onclick="removeElements()">Remove checked</span>
+					<ul id="list">
+          </ul>
+        </div>
+			</div>
+		</main>
+		<footer>
+			<form action="#">
+				<button type="submit">Log out</button>
+			</form>
+		</footer>
+	</div>
+<script src="../public/scripts/addToDo.js"></script>
+<script src="../public/scripts/checkedToDo.js"></script>
+<script src="../public/scripts/removeToDo.js"></script>
+<script src="../public/scripts/sendRequest.js"></script>
+</body>
+</html>
