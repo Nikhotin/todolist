@@ -43,6 +43,7 @@ for (let i = 0; i < list.length; i += 1) {
     // заполнение блоков данными из БД
     await sendRequest('GET', 'http://localhost:3000/todos')
       .then((data) => {
+        // eslint-disable-next-line no-shadow
         for (let i = 0; i < data.length; i += 1) {
           const li = document.createElement('li');
           const text = document.createTextNode(data[i].title);

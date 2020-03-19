@@ -118,7 +118,7 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  max-height: 225px;
+  max-height: 180px;
   overflow: scroll;
 }
 

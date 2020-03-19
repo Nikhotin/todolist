@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/11268750-2101-45fe-8012-22dafbcdb6f3/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/NikhotinTodo",
+    "appService.deploySubpath": ""
+}
