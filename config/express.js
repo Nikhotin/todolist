@@ -2,6 +2,7 @@ const express = require('express');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const path = require('path');
+const cors = require('cors');
 
 module.exports = (app) => {
   app.use(express.urlencoded({ extended: true }));
@@ -9,6 +10,7 @@ module.exports = (app) => {
   app.use(express.json());
   app.use(cookieParser());
   app.use(express.static(path.join(__dirname, '../public')));
+  app.use(cors());
 
   // error handler
   // eslint-disable-next-line no-unused-vars

@@ -24,14 +24,19 @@
 		</header>
 		<main>
 			<div class="content">
-        <div>
-          <p class="title">Your todos</p>
-          <input type="text" placeholder="Input your new todo..." id="toDoElem">
-         	<span class="todoBtn" onclick="newElement()">Add todo</span>
-         	<span class="todoBtn" onclick="removeElements()">Remove checked</span>
-					<ul id="list">
-          </ul>
-        </div>
+				<div>
+				<p class="title">Your todos</p>
+				<input type="text" placeholder="Input your new todo..." id="toDoElem">
+					<span class="todoBtn" onclick="newElement()">Add todo</span>
+							<ul id="todos">
+				</ul>
+				</div>
+				<div>
+				<p class="title">Checked todos</p>
+					<span class="todoBtn" onclick="removeElements()">Remove checked</span>
+							<ul id="check">
+				</ul>
+				</div>
 			</div>
 		</main>
 		<footer>

@@ -4,6 +4,7 @@ require('./app/models');
 const config = require('./config');
 
 mongoose.set('useCreateIndex', true);
+mongoose.set('useFindAndModify', false);
 
 const app = express();
 config.express(app);

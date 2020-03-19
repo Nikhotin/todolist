@@ -29,15 +29,21 @@ sendRequest('GET', 'http://localhost:3000/todos')
       const li = document.createElement('li');
       const text = document.createTextNode(data[i].title);
       li.appendChild(text);
-      document.getElementById('list').appendChild(li);
-      const span = document.createElement('SPAN');
-      const txt = document.createTextNode('=');
-      span.className = 'dragAndDrop';
-      span.appendChild(txt);
-      li.appendChild(span);
-      li.classList.toggle('unchecked');
-
-      if (data.checked === true) {
+      if (data[i].checked === false) {
+        document.getElementById('todos').appendChild(li);
+        const span = document.createElement('SPAN');
+        const txt = document.createTextNode('=');
+        span.className = 'dragAndDrop';
+        span.appendChild(txt);
+        li.appendChild(span);
+        li.classList.toggle('unchecked');
+      } else {
+        document.getElementById('check').appendChild(li);
+        const span = document.createElement('SPAN');
+        const txt = document.createTextNode('=');
+        span.className = 'dragAndDrop';
+        span.appendChild(txt);
+        li.appendChild(span);
         li.classList.toggle('checked');
       }
     }
